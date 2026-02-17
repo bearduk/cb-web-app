@@ -1,1 +1,122 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>My App</title></head><body><h1>Hello World</h1></body></html>
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CB Web App</title>
+  <meta name="description" content="A modern holding page with filterable links and theme switching.">
+  <meta property="og:title" content="CB Web App">
+  <meta property="og:description" content="A modern holding page with filterable links and theme switching.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="/" class="site-logo">CB Web App</a>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+        <span class="theme-toggle-icon" id="themeIcon">&#9790;</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1 class="hero-title">Welcome to CB Web App</h1>
+      <p class="hero-tagline">A simple holding page &mdash; explore the links below or toggle the theme.</p>
+    </div>
+  </section>
+
+  <!-- Main content -->
+  <main class="main-content">
+    <div class="container">
+
+      <section class="links-section" id="linksSection">
+        <h2 class="section-title">Quick Links</h2>
+
+        <div class="filter-bar">
+          <input
+            type="text"
+            id="filterInput"
+            class="filter-input"
+            placeholder="Filter links&hellip;"
+            aria-label="Filter links"
+          >
+        </div>
+
+        <ul class="link-list" id="linkList">
+          <li class="link-card">
+            <a href="#">Project Alpha</a>
+            <span class="link-desc">Main project dashboard and overview</span>
+          </li>
+          <li class="link-card">
+            <a href="#">Dashboard Beta</a>
+            <span class="link-desc">Real-time analytics and monitoring</span>
+          </li>
+          <li class="link-card">
+            <a href="#">Analytics Portal</a>
+            <span class="link-desc">Deep-dive data exploration tools</span>
+          </li>
+          <li class="link-card">
+            <a href="#">Design System</a>
+            <span class="link-desc">Component library and style guide</span>
+          </li>
+          <li class="link-card">
+            <a href="#">API Documentation</a>
+            <span class="link-desc">REST and GraphQL endpoint reference</span>
+          </li>
+          <li class="link-card">
+            <a href="#">DevOps Pipeline</a>
+            <span class="link-desc">CI/CD workflows and deployment status</span>
+          </li>
+          <li class="link-card">
+            <a href="#">Team Wiki</a>
+            <span class="link-desc">Internal knowledge base and guides</span>
+          </li>
+          <li class="link-card">
+            <a href="#">Issue Tracker</a>
+            <span class="link-desc">Bug reports and feature requests</span>
+          </li>
+          <li class="link-card">
+            <a href="#">Cloud Console</a>
+            <span class="link-desc">Infrastructure and resource management</span>
+          </li>
+          <li class="link-card">
+            <a href="#">Security Audit</a>
+            <span class="link-desc">Vulnerability scans and compliance reports</span>
+          </li>
+          <li class="link-card">
+            <a href="#">Performance Lab</a>
+            <span class="link-desc">Load testing and benchmark results</span>
+          </li>
+          <li class="link-card">
+            <a href="#">Release Notes</a>
+            <span class="link-desc">Changelog and version history</span>
+          </li>
+        </ul>
+
+        <p class="no-results hidden" id="noResults">No links match your filter.</p>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 CB Web App. All rights reserved.</p>
+      <p class="footer-note">Hosted on GitHub Pages</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
